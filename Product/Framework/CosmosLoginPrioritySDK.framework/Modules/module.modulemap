@@ -1,0 +1,6 @@
+framework module CosmosLoginPrioritySDK {
+  umbrella header "CosmosLoginPrioritySDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
