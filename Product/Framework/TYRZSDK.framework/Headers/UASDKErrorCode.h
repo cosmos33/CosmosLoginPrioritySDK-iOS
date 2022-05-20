@@ -14,38 +14,35 @@
 typedef NSString *UASDKErrorCode;
 
 //成功
-static UASDKErrorCode const UASDKErrorCodeSuccess = @"103000";
+static UASDKErrorCode const UASDKErrorCodeSuccess                = @"103000";
 //数据解析异常
-static UASDKErrorCode const UASDKErrorCodeProcessException = @"200021";
+static UASDKErrorCode const UASDKErrorCodeProcessException       = @"200021";
 //无网络
-static UASDKErrorCode const UASDKErrorCodeNoNetwork = @"200022";
+static UASDKErrorCode const UASDKErrorCodeNoNetwork              = @"200022";
 //请求超时
-static UASDKErrorCode const UASDKErrorCodeRequestTimeout = @"200023";
+static UASDKErrorCode const UASDKErrorCodeRequestTimeout         = @"200023";
 //未知错误
-static UASDKErrorCode const UASDKErrorCodeUnknownError = @"200025";
+static UASDKErrorCode const UASDKErrorCodeUnknownError           = @"200025";
 //蜂窝未开启或不稳定
-static UASDKErrorCode const UASDKErrorCodeNonCellularNetwork = @"200027";
+static UASDKErrorCode const UASDKErrorCodeNonCellularNetwork     = @"200027";
 //网络请求出错(HTTP Code 非200)
-static UASDKErrorCode const UASDKErrorCodeRequestError = @"200028";
+static UASDKErrorCode const UASDKErrorCodeRequestError           = @"200028";
 //非移动网关重定向失败
-static UASDKErrorCode const UASDKErrorCodeWAPRedirectFailed = @"200038";
+static UASDKErrorCode const UASDKErrorCodeWAPRedirectFailed      = @"200038";
 //无SIM卡
-static UASDKErrorCode const UASDKErrorCodePhoneWithoutSIM = @"200048";
+static UASDKErrorCode const UASDKErrorCodePhoneWithoutSIM        = @"200048";
 //Socket创建或发送接收数据失败
-static UASDKErrorCode const UASDKErrorCodeSocketError = @"200050";
+static UASDKErrorCode const UASDKErrorCodeSocketError            = @"200050";
 //服务端返回数据异常
-static UASDKErrorCode const UASDKErrorCodeExceptionData = @"200064";
+static UASDKErrorCode const UASDKErrorCodeExceptionData          = @"200064";
 //CA根证书校验失败
-static UASDKErrorCode const UASDKErrorCodeCAAuthFailed = @"200072";
+static UASDKErrorCode const UASDKErrorCodeCAAuthFailed           = @"200072";
 //服务器繁忙
-static UASDKErrorCode const UASDKErrorCodeServerBusy = @"200082";
+static UASDKErrorCode const UASDKErrorCodeServerBusy             = @"200082";
 //ppLocation为空
-static UASDKErrorCode const UASDKErrorCodeLocationError = @"200086";
-//SDK正在处理
-static UASDKErrorCode const UASDKErrorCodeHandling = @"200089";
+static UASDKErrorCode const UASDKErrorCodeLocationError          = @"200086";
 //当前网络不支持取号
-static UASDKErrorCode const UASDKErrorCodeUnsupportedNetwork = @"200096";
-
+static UASDKErrorCode const UASDKErrorCodeUnsupportedNetwork     = @"200096";
 
 /**
  获取错误码描述
