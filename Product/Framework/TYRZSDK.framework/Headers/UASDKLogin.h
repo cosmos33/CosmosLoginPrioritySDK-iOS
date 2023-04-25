@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define UASDKVERSION @"quick_login_iOS_9.6.1.1"
+#define UASDKVERSION @"quick_login_iOS_9.6.2"
 
 NS_ASSUME_NONNULL_BEGIN
 
