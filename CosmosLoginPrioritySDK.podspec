@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'CosmosLoginPrioritySDK'
-s.version          = '0.0.4'
+s.version          = '0.0.9'
 s.summary          = 'log'
 
 s.description      = <<-DESC
