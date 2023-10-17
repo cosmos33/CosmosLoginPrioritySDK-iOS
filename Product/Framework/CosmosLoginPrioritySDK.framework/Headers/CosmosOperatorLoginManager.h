@@ -90,7 +90,7 @@ typedef void (^LoginClickAction)(NSDictionary * _Nullable   resultDic, CosmosOpe
 
  */
 + (void)getAuthorizationCompletion:(LoginCallback)callBack;
-
++ (void)setMobEnagle:(BOOL)isEnable;
 
 @end
 

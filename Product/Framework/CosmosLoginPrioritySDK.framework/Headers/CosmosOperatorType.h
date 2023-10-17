@@ -11,10 +11,11 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger,CosmosOperatorsType) {//sim卡信息
-    CosmosOperatorsOther = 0,//其它
-    CosmosOperatorsMobile,//移动
-    CosmosOperatorsUnicom,//联通
-    CosmosOperatorsTelecom//电信
+    CosmosOperatorsOther = 0,   // 其它
+    CosmosOperatorsMobile,      // 移动
+    CosmosOperatorsUnicom,      // 联通
+    CosmosOperatorsTelecom,     // 电信
+    CosmosOperatorsMob,         // mob
 };
 
 #endif /* CosmosOperatorType_h */
