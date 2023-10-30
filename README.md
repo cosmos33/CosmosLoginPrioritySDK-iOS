@@ -59,15 +59,10 @@ typedef NS_ENUM(NSInteger,CosmosOperatorsType) {//sim卡信息
             } else {
             }
             DispatchQueue.main.async {
-                // 回调有可能不再主线程,这里有界面更新需要主动处理下
+                // 回调有可能不在主线程,这里有界面更新需要主动处理下
                 strongSelf.preLoginFinishHandler?()
                 strongSelf.preLoginFinishHandler = nil
             }
-        }
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-            self.preLoginFinishHandler?()
-            self.preLoginFinishHandler = nil
         }
     }
 
