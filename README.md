@@ -51,16 +51,15 @@ typedef NS_ENUM(NSInteger,CosmosOperatorsType) {//sim卡信息
 
         CosmosOperatorLoginManager.requestPreLogin(5) { [weak self] resultDic, error in
             guard let strongSelf = self else { return }
-            DiscordOneClickLoginClient.hasCheck = true
 
             if error == nil {
                 strongSelf.phoneNum = resultDic?["securityPhone"] as? String ?? ""
+                // source目前包含10086,10000,10011(联通)
                 strongSelf.source = resultDic?["source"] as? String ?? ""
-                DiscordOneClickLoginClient.isPrelogin = true
             } else {
-                DiscordOneClickLoginClient.isPrelogin = false
             }
             DispatchQueue.main.async {
+                // 回调有可能不再主线程,这里有界面更新需要主动处理下
                 strongSelf.preLoginFinishHandler?()
                 strongSelf.preLoginFinishHandler = nil
             }
