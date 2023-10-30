@@ -13,7 +13,7 @@
 
 
 ## 代码接入 
-## 初始化
+# 初始化
 ```
     // 设置cosmosid
     CosmosOperatorLoginManager.initSDK("cosmos id")
