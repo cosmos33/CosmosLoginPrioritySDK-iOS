@@ -13,7 +13,7 @@
 
 
 ## 代码接入 
-# 初始化
+### 初始化
 ```
     // 设置cosmosid
     CosmosOperatorLoginManager.initSDK("cosmos id")
@@ -27,7 +27,7 @@
 
 ```
 
-## 预登录
+### 预登录
 ```
     func preLogin() {
 
@@ -55,7 +55,7 @@
     }
 ```
 
-## 登陆验证
+### 登陆验证
 ```
     func startAuth(completionHandler: ((AuthStyle, String?) -> Void)?) {
         self.authHandler = completionHandler
