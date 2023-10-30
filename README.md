@@ -13,6 +13,7 @@
 
 
 ## 代码接入 
+
 ### 初始化
 ```
     // 设置cosmosid
@@ -26,6 +27,7 @@
 
 
 ```
+
 
 ### 预登录
 ```
@@ -55,6 +57,7 @@
     }
 ```
 
+
 ### 登陆验证
 ```
     func startAuth(completionHandler: ((AuthStyle, String?) -> Void)?) {
@@ -80,5 +83,12 @@
 
 ```
 
+### mob登陆处理
+```
+    // 如果有mob节点需要转成jsonstring,传给cosmos服务器验证
+    if let jsonDict = dict["sdkJson"] as? [String:Any] {
+        dict["sdkJson"] = jsonDict.jsonString
+    }
+```
 
 
