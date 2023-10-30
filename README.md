@@ -14,8 +14,10 @@
 
 ## 代码接入 
 
+
 ### 初始化
 ```
+
     // 设置cosmosid
     CosmosOperatorLoginManager.initSDK("cosmos id")
 
@@ -25,12 +27,26 @@
     // 是否使用mob登陆  
     CosmosOperatorLoginManager.setMobEnagle(true)
 
+```
+
+
+### 运营商类型
+```
+
+typedef NS_ENUM(NSInteger,CosmosOperatorsType) {//sim卡信息
+    CosmosOperatorsOther = 0,   // 其它
+    CosmosOperatorsMobile,      // 移动
+    CosmosOperatorsUnicom,      // 联通
+    CosmosOperatorsTelecom,     // 电信
+    CosmosOperatorsMob,         // mob
+};
 
 ```
 
 
 ### 预登录
 ```
+
     func preLogin() {
 
         CosmosOperatorLoginManager.requestPreLogin(5) { [weak self] resultDic, error in
@@ -55,11 +71,13 @@
             self.preLoginFinishHandler = nil
         }
     }
+
 ```
 
 
 ### 登陆验证
 ```
+
     func startAuth(completionHandler: ((AuthStyle, String?) -> Void)?) {
         self.authHandler = completionHandler
         let viewController = MMChannelManager.visibleNavigationController()?.visibleViewController ?? UIViewController()
@@ -83,12 +101,15 @@
 
 ```
 
+
 ### mob登陆处理
 ```
+
     // 如果有mob节点需要转成jsonstring,传给cosmos服务器验证
     if let jsonDict = dict["sdkJson"] as? [String:Any] {
         dict["sdkJson"] = jsonDict.jsonString
     }
+
 ```
 
 
