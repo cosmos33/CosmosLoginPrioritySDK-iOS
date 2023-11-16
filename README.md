@@ -8,11 +8,14 @@
 0.1.8:
 * 增加mob登陆正式版
 
+
 0.1.4 mob测试版:
 * pod 'CosmosLoginPrioritySDK', :git => 'git@github.com:cosmos33/CosmosLoginPrioritySDK-iOS.git', :branch => 'dev'
 
+
 0.1.3:
 * pod 'CosmosLoginPrioritySDK'
+
 
 
 ## 代码接入 
