@@ -7,7 +7,7 @@
 //
 
 /**
- 定制版SDK v3.8.3 20200624
+ 定制版SDK v4.5.9 20231113
  */
 
 #import <Foundation/Foundation.h>
@@ -53,7 +53,7 @@ typedef   void (^failureHandler) (NSError * _Nonnull error);
 
 /**
 @description   获取当前流量卡运营商信息
-@return NSString    "CT"    中国电信 / "CM"     中国移动 / "CU"     中国联联通 / "UN"    未知
+@return NSString    "CT"    中国电信 / "CM"     中国移动 / "CU"     中国联通 / "UN"    未知
 */
 + (NSString *)getOperatorType;
 
@@ -79,5 +79,9 @@ typedef   void (^failureHandler) (NSError * _Nonnull error);
                          failure:(nonnull failureHandler)fail DEPRECATED_MSG_ATTRIBUTE("Please use `requestPreLogin:completion:failure:` instead");
 
 + (void)setDomainName:(EAccountCTEConfig * _Nonnull)config;
+
+#pragma -mark ----------------other method-----------------------
+
++ (void)startReportLog:(NSMutableDictionary * _Nonnull)logDic;
 
 @end
