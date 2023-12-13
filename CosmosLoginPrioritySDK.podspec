@@ -12,7 +12,7 @@ s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'wang.xuefei' => 'xue.xuefei' }
 s.source           = { :git => 'https://github.com/cosmos33/CosmosLoginPrioritySDK-iOS.git', :tag => s.version.to_s }
 
-s.ios.deployment_target = '9.0'
+s.ios.deployment_target = '13.0'
 s.module_name = 'CosmosLoginPrioritySDK'
 s.static_framework = true
 
